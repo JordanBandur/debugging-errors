@@ -1,8 +1,7 @@
-var input = process.argv[2];
+const input = process.argv[2];
 
-if (input)
-  console.log(reverse(input));
+const reverse = function(original) {
+  return original.split("").reverse().join("");
+};
 
-function reverse(original) {
-  return orignal.split('').reverseList().join('');
-}
+if (input) console.log(reverse(input));
